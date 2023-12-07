@@ -12,3 +12,18 @@ export type TAccount = {
     balance: number,
     type: ACCOUNT_TYPE
 }
+
+export enum POWER_TYPE{
+    HIDE = "Sorrateiro",
+    WIZARD = "Magia",
+    STRENGTH = "Força",
+    SPEED = "Veloz",
+    ARCHERY =  "Arqueiro"  
+}
+
+export type Tcharacter = {
+    id: string,
+    name: string,
+    powerType: POWER_TYPE,
+    age: number
+}
